@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/vumiquang/weather_app/static/js/main.b511f797.chunk.js",
+    "main.js.map": "/vumiquang/weather_app/static/js/main.b511f797.chunk.js.map",
+    "runtime-main.js": "/vumiquang/weather_app/static/js/runtime-main.dbd449e1.js",
+    "runtime-main.js.map": "/vumiquang/weather_app/static/js/runtime-main.dbd449e1.js.map",
+    "static/js/2.bef82e2c.chunk.js": "/vumiquang/weather_app/static/js/2.bef82e2c.chunk.js",
+    "static/js/2.bef82e2c.chunk.js.map": "/vumiquang/weather_app/static/js/2.bef82e2c.chunk.js.map",
+    "index.html": "/vumiquang/weather_app/index.html",
+    "static/js/2.bef82e2c.chunk.js.LICENSE.txt": "/vumiquang/weather_app/static/js/2.bef82e2c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dbd449e1.js",
+    "static/js/2.bef82e2c.chunk.js",
+    "static/js/main.b511f797.chunk.js"
+  ]
+}
