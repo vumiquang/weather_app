@@ -6,8 +6,8 @@ export const Container = styled.div`
 `;
 export const BackDrop = styled.div`
   width: 100vw;
-  height: 100%;
-  overflow-x: hidden;
+  height: 100vh;
+  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
