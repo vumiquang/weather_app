@@ -18,9 +18,9 @@ const useForecast = () => {
       }
       query = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(
         searchLocation
-      )}&units=metric&appid=${process.env.REACT_APP_API}`;
+      )}&units=metric&appid=35895e6d21cae06df5f29137facd2c87`;
     } else {
-      query = `https://api.openweathermap.org/data/2.5/weather?lat=${searchLocation.lat}&lon=${searchLocation.long}&appid=${process.env.REACT_APP_API}&units=metric`;
+      query = `https://api.openweathermap.org/data/2.5/weather?lat=${searchLocation.lat}&lon=${searchLocation.long}&appid=35895e6d21cae06df5f29137facd2c87&units=metric`;
     }
     const res = await fetch(query);
     if (res.status === 404) {
@@ -38,7 +38,7 @@ const useForecast = () => {
   };
 
   const getDataDaily = async (dataCurrent) => {
-    const queryDaily = `https://api.openweathermap.org/data/2.5/onecall?lat=${dataCurrent.coord.lat}&lon=${dataCurrent.coord.lon}&exclude=hourly&appid=${process.env.REACT_APP_API}&units=metric`;
+    const queryDaily = `https://api.openweathermap.org/data/2.5/onecall?lat=${dataCurrent.coord.lat}&lon=${dataCurrent.coord.lon}&exclude=hourly&appid=35895e6d21cae06df5f29137facd2c87&units=metric`;
 
     const resDaily = await fetch(queryDaily);
 
