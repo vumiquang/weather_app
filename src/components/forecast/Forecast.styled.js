@@ -6,7 +6,7 @@ export const Container = styled.div`
   margin: 0 auto;
   padding-top: 20px;
   color: #4a4a4a;
-
+  padding-bottom: 20px;
   @media (max-width: 1200px) {
     width: 70%;
   }
@@ -60,6 +60,7 @@ export const LeftInfo = styled.div`
 
   @media (max-width: 1200px) {
     border-right: none;
+    padding-left: 0px;
   }
   @media (max-width: 767px) {
     & span {
