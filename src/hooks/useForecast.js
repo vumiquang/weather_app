@@ -91,6 +91,7 @@ const useForecast = () => {
     loading,
     fetchWeather,
     setError,
+    setLoading
   };
 };
 

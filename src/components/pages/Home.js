@@ -11,7 +11,7 @@ const Home = (props) => {
   const [loadingMsg, setLoadingMsg] = useState(
     'Loading your location weather...'
   );
-  const { data, loading, error, setError, fetchWeather } = useForecast();
+  const { data, loading, error, setError, fetchWeather,setLoading } = useForecast();
 
   if (data === null) {
     console.log('init weather null');
@@ -55,6 +55,7 @@ const Home = (props) => {
 
   function getLocationError() {
     setError('Cannot get your location!');
+    setLoading(false);
   }
 
   return (
