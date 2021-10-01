@@ -80,9 +80,7 @@ const Forecast = ({ weather }) => {
           </WrapSubInfo>
           <WrapSubInfo>
             <SubInfo>
-              {new Date(
-                weather.sunrise * 1000
-              ).toLocaleTimeString('en-US', {
+              {new Date(weather.sunrise * 1000).toLocaleTimeString('en-US', {
                 hour: '2-digit',
                 minute: '2-digit',
               })}
@@ -101,9 +99,7 @@ const Forecast = ({ weather }) => {
           </WrapSubInfo>
           <WrapSubInfo>
             <SubInfo>
-              {new Date(
-                weather.sunset * 1000
-              ).toLocaleTimeString([], {
+              {new Date(weather.sunset * 1000).toLocaleTimeString([], {
                 hour: '2-digit',
                 minute: '2-digit',
               })}

@@ -1,10 +1,11 @@
 import styled, { keyframes } from 'styled-components';
-
-export const BackDrop = styled.div`
+export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-
+  overflow-x: hidden;
+`;
+export const BackDrop = styled.div`
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -12,7 +13,6 @@ export const BackDrop = styled.div`
 `;
 
 export const Wrap = styled.div`
-  height: calc(70vh);
   margin: 0 auto;
   margin-top: 20px;
 `;
@@ -22,6 +22,14 @@ export const Title = styled.h1`
   color: white;
   font-size: 50px;
   text-shadow: 0 0 4px black;
+  }
+
+  @media (max-width:700px){
+    font-size: 40px;
+  }
+
+  @media (max-width:500px){
+    font-size: 30px;
   }
 `;
 const cloudXAnimation = keyframes`

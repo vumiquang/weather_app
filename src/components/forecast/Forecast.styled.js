@@ -18,9 +18,15 @@ export const Container = styled.div`
 export const Location = styled.div`
   font-size: 50px;
   font-weight: bold;
+  @media (max-width: 500px) {
+    text-align: center;
+  }
 `;
 export const Time = styled.div`
   font-size: 15px;
+  @media (max-width: 500px) {
+    text-align: center;
+  }
 `;
 
 export const InfoWrap = styled.div`
@@ -60,6 +66,12 @@ export const LeftInfo = styled.div`
       font-size: 125px;
     }
   }
+
+  @media (max-width: 500px) {
+    & > div {
+      padding-left: 0;
+    }
+  }
 `;
 
 export const RightInfo = styled.div`
@@ -85,6 +97,12 @@ export const Temp = styled.span`
     right: ${({ size }) => '-' + size / 6 + 'px'};
     font-size: ${({ size }) => size / 3 + 'px'};
     font-weight: ${({ weight }) => weight};
+  }
+
+  @media (max-width: 500px) {
+    font-size: ${({ size }) => {
+      if (size === 150) return 130 + 'px';
+    }};
   }
 `;
 
