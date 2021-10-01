@@ -15,7 +15,6 @@ const Home = (props) => {
     useForecast();
 
   if (data === null) {
-    console.log('init weather null');
   }
   const handleSearch = (query) => {
     if (query.trim() === '') {
@@ -32,11 +31,9 @@ const Home = (props) => {
   }, []);
 
   function getYourWeatherLocation() {
-    console.log('use effect');
     if (!navigator.geolocation) {
       setError('Geolocation is not supported by your browser');
     } else {
-      console.log(navigator.geolocation.getCurrentPosition);
       navigator.geolocation.getCurrentPosition(
         getLocationSuccess,
         getLocationError
@@ -45,13 +42,10 @@ const Home = (props) => {
   }
 
   function getLocationSuccess(location) {
-    console.log(' step 2');
     fetchWeather({
       lat: location.coords.latitude,
       long: location.coords.longitude,
-    }).then(() => {
-      console.log('step 3');
-    });
+    }).then(() => {});
   }
 
   function getLocationError() {

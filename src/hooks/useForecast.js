@@ -7,7 +7,7 @@ const useForecast = () => {
 
   const ref = useRef(0);
   ref.current += 1;
-  console.log(ref);
+
   const getDataCurrent = async (searchLocation) => {
     let query = '';
     if (typeof searchLocation === 'string') {
@@ -66,7 +66,7 @@ const useForecast = () => {
     if (!dataDaily) {
       return;
     }
-    console.log(dataCurrent);
+
     const data = {
       name: dataCurrent.name,
       sunrise: dataCurrent.sys.sunrise,
@@ -91,7 +91,7 @@ const useForecast = () => {
     loading,
     fetchWeather,
     setError,
-    setLoading
+    setLoading,
   };
 };
 
